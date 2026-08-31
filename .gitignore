@@ -1,0 +1,62 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Composer dependencies
+/vendor/
+
+# Runtime files
+writable/cache/*
+!writable/cache/.gitkeep
+!writable/cache/index.html
+writable/logs/*
+!writable/logs/.gitkeep
+!writable/logs/index.html
+writable/session/*
+!writable/session/.gitkeep
+!writable/session/index.html
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+!writable/debugbar/index.html
+writable/reports/*
+!writable/reports/.gitkeep
+!writable/reports/index.html
+writable/uploads/*
+!writable/uploads/.gitkeep
+!writable/uploads/index.html
+!writable/uploads/chatbot_sources/
+writable/uploads/chatbot_sources/*
+!writable/uploads/chatbot_sources/.gitkeep
+!writable/uploads/chatbot_sources/index.html
+
+# Runtime/user uploads
+public/uploads/**/*
+!public/uploads/**/.gitkeep
+!public/uploads/**/index.html
+!public/uploads/**/.htaccess
+public/assets/uploads/branding/*
+!public/assets/uploads/branding/.gitkeep
+!public/assets/uploads/branding/index.html
+public/assets/uploads/gallery/**/*
+!public/assets/uploads/gallery/**/.gitkeep
+!public/assets/uploads/gallery/**/index.html
+!public/assets/uploads/gallery/**/.htaccess
+public/assets/uploads/packages/**/*
+!public/assets/uploads/packages/**/.gitkeep
+!public/assets/uploads/packages/**/index.html
+!public/assets/uploads/packages/**/.htaccess
+public/assets/uploads/testimonials/**/*
+!public/assets/uploads/testimonials/**/.gitkeep
+!public/assets/uploads/testimonials/**/index.html
+!public/assets/uploads/testimonials/**/.htaccess
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# PHPUnit
+.phpunit.result.cache
+coverage/

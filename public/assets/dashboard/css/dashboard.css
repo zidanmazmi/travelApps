@@ -1,0 +1,98 @@
+.admin-login-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(13, 59, 46, 0.82), rgba(13, 59, 46, 0.82)),
+        url('../../frontend/images/hero-kaabah.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.admin-login-card {
+    background-color: var(--white);
+    border-radius: var(--radius-card);
+    border: 1px solid rgba(232, 226, 217, 0.9);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.admin-login-card-header {
+    background-color: var(--primary);
+    padding: 28px 24px;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+}
+
+.admin-login-card-header::after {
+    content: "";
+    width: 72px;
+    height: 3px;
+    background-color: var(--brand-primary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.admin-logo-mark {
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(201, 160, 74, 0.8);
+    border-radius: 50%;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-primary);
+    font-size: 24px;
+}
+
+.admin-login-title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.admin-login-subtitle {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.admin-login-body {
+    padding: 28px;
+}
+
+.admin-login-footer {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.admin-small-note {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .form-control {
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+}
